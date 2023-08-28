@@ -79,14 +79,10 @@ const timelineData = [
       {
         time: "03/09/2023 01:45PM - 2:45PM",
         title: "Music (Finals)",
-        description: "Click here to register for the event.",
-        registrationLink: "www.example.com",
       },
       {
         time: "03/09/2023 3:00PM - 4:30PM",
         title: "Dance (Finals)",
-        description: "Click here to register for the event.",
-        registrationLink: "www.example.com",
       },
       {
         time: "03/09/2023 4:45PM - 5:45PM",

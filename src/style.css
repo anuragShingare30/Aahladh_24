@@ -198,7 +198,7 @@
 .buttons {
     position: absolute;
     bottom: 30px;
-    z-index: 22222;
+    z-index: 22;
     text-align: center;
     width: 100%;
 }
@@ -218,8 +218,6 @@
 .register-btn:hover {
     background-color: #bac383;
     cursor: pointer;
-    /* color: white;
-    font-weight: bold; */
 }
 
 /* register-btn */
