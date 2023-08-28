@@ -65,9 +65,9 @@ const Events = () => {
       backgroundImage:DumbCharades,
     },
     {
-      title: "THAMBOLA",
+      title: "TOMBOLA",
       copy: "Click here to register for the event",
-      registrationLink: "Thambola",
+      registrationLink: "/Thambola",
       backgroundImage: Tombola,
     },
     {
