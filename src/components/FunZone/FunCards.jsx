@@ -12,7 +12,7 @@ function Card(props) {
         <h2 className="organizers-title">{props.title}</h2>
         <p className="organizers-copy">{props.copy}</p>
         <Link to={props.registrationLink} className="event-btn">
-          Click Here to Register
+          Click Here to See More
         </Link>
       </div>
     </div>
