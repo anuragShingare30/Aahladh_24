@@ -1,12 +1,16 @@
-import React from "react";
+import React, { useEffect } from "react";
 import AboutEvent from "../AboutEvent";
 import Organizers from "../../Organizers/Organizers";
 import { AiFillInstagram } from "react-icons/ai";
-import ChaitanyaImage from '../../../Assets/Volunteers/Chaitanya.jpg'
-import RaahathImage from '../../../Assets/Volunteers/SHAIKRAAHATH.jpeg'
-import RohitImage from "../../../Assets/Volunteers/ROHITBELLUR.jpg"
+import ChaitanyaImage from "../../../Assets/Volunteers/Chaitanya.jpg";
+import RaahathImage from "../../../Assets/Volunteers/SHAIKRAAHATH.jpeg";
+import RohitImage from "../../../Assets/Volunteers/ROHITBELLUR.jpg";
 
 const Singing = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   const aboutText = [
     "<strong> Round >> 1 </strong>",
     "1) You can sing as a <strong> group or duo or solo </strong>.",
@@ -14,7 +18,7 @@ const Singing = () => {
     "3) <strong> Time Limit </strong> : Around 2.5 - 3 minutes.",
     "4) <strong> Bilingual performances </strong> will have more priority.",
     "5) Engagingness and sync will be criteria for evaluation.",
-    "6) Information on next round(s) will be provided once Round 1 is over."
+    "6) Information on next round(s) will be provided once Round 1 is over.",
   ];
 
   const formattedAboutText = aboutText.map((text, index) => (
@@ -73,7 +77,7 @@ const Singing = () => {
         registrationLinks={registrationLink}
       />
       <div>
-        <h3 className="volunteer-heading">Music Volunters</h3>
+        <h3 className="volunteer-heading">Music Volunteers</h3>
         <Organizers organizersData={organizersData} />
       </div>
     </div>

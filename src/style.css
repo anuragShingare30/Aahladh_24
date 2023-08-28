@@ -1,105 +1,3 @@
-/* loader */
-.loader-container {
-    height: 100vh;
-    background: #000;
-    overflow: hidden;
-
-}
-
-.loader-container::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(to right, rgb(157, 0, 255), rgb(6, 136, 243), rgb(85, 255, 0), rgb(255, 242, 0), rgb(255, 55, 0));
-    mix-blend-mode: color;
-    pointer-events: none;
-}
-
-video {
-    object-fit: cover;
-}
-
-.loader-text {
-    margin: 0;
-    padding: 0;
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    width: 100%;
-    text-align: center;
-    color: #fff;
-    font-size: 5em;
-    font-family: sans-serif;
-    text-transform: uppercase;
-}
-
-.loader-text span {
-    display: inline-block;
-    animation: animate 1s linear forwards;
-}
-
-@keyframes animate {
-    0% {
-        opacity: 0;
-        transform: rotateY(90deg);
-        filter: blur(10px);
-        size: 100vh;
-    }
-
-    100% {
-        opacity: 1;
-        transform: rotateY(0deg);
-        filter: blur(0);
-        size: 100vh;
-    }
-}
-
-.loader-text span:nth-child(1) {
-    color: rgb(157, 0, 255);
-    opacity: 0;
-    animation-delay: 2s;
-}
-
-.loader-text span:nth-child(2) {
-    color: rgb(0, 251, 255);
-    opacity: 0;
-    animation-delay: 2.5s;
-
-}
-
-.loader-text span:nth-child(3) {
-    color: rgb(6, 136, 243);
-    opacity: 0;
-    animation-delay: 2.75s;
-}
-
-.loader-text span:nth-child(4) {
-    color: rgb(85, 255, 0);
-    opacity: 0;
-    animation-delay: 3s;
-}
-
-.loader-text span:nth-child(5) {
-    color: rgb(255, 242, 0);
-    opacity: 0;
-    animation-delay: 3.5s;
-}
-
-.loader-text span:nth-child(6) {
-    color: rgb(255, 196, 0);
-    opacity: 0;
-    animation-delay: 3.75s;
-}
-
-.loader-text span:nth-child(7) {
-    color: rgb(255, 55, 0);
-    opacity: 0;
-    animation-delay: 4s;
-}
-
 
 /* ============================================================== HOME-CSS ============================================== */
 
@@ -300,7 +198,7 @@ video {
 .buttons {
     position: absolute;
     bottom: 30px;
-    z-index: 222222;
+    z-index: 22222;
     text-align: center;
     width: 100%;
 }

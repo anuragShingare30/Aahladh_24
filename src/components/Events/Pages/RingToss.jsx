@@ -1,13 +1,17 @@
-import React from "react";
+import React, { useEffect } from "react";
 import AboutEvent from "../AboutEvent";
 import Organizers from "../../Organizers/Organizers";
 import { AiFillInstagram, AiFillLinkedin } from "react-icons/ai";
-import SathvikaImage from '../../../Assets/FUNZONE/BSathvika.jpeg'
-import RamcharanImage from '../../../Assets/FUNZONE/RAMCHARANTEJ.jpeg'
-import SindujaImage from '../../../Assets/FUNZONE/SINDHUJA.jpeg'
-import JayashreeImage from '../../../Assets/FUNZONE/KJAYASHREE.jpg'
+import SathvikaImage from "../../../Assets/FUNZONE/BSathvika.jpeg";
+import RamcharanImage from "../../../Assets/FUNZONE/RAMCHARANTEJ.jpeg";
+import SindujaImage from "../../../Assets/FUNZONE/SINDHUJA.jpeg";
+import JayashreeImage from "../../../Assets/FUNZONE/KJAYASHREE.jpg";
 
 const RingToss = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   const aboutText = [
     "<strong> Gameplay: </strong>",
     "1) Divide participants into smaller groups, with each group starting at a different station.",
@@ -91,7 +95,7 @@ const RingToss = () => {
         registrationLinks={registrationLink}
       />
       <div>
-        <h3 className="volunteer-heading">Unseen Artistry Volunters</h3>
+        <h3 className="volunteer-heading">Unseen Artistry Volunteers</h3>
         <Organizers organizersData={organizersData} />
       </div>
     </div>

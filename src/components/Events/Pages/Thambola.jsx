@@ -1,12 +1,16 @@
-import React from "react";
+import React, { useEffect } from "react";
 import AboutEvent from "../AboutEvent";
 import Organizers from "../../Organizers/Organizers";
 import { AiFillInstagram } from "react-icons/ai";
 import HimanshuImage from "../../../Assets/Volunteers/Himanshu.jpg";
-import SamuelImage from '../../../Assets/Volunteers/SAMUELNADAR.jpg'
-import BrundhaImage from "../../../Assets/Volunteers/BRUNDHASAI.webp"
+import SamuelImage from "../../../Assets/Volunteers/SAMUELNADAR.jpg";
+import BrundhaImage from "../../../Assets/Volunteers/BRUNDHASAI.webp";
 
 const Thambola = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   const aboutText = [
     "<strong> Round >> 1 </strong>",
     "1) Each player will be given a <strong> tombola ticket and a pen. </strong>",
@@ -22,7 +26,7 @@ const Thambola = () => {
     "c) Each of the patterns can be claimed only by the first player to shout. <strong> If any player tries to claim an already claimed pattern, 10 points will be deducted. </strong>",
     "d) A player can claim as many patterns as he wishes. But <strong>if any pattern claimed is found to be false, the player will be disqualified from the game.</strong>",
     "e) The game will end when the first player shouts Tombola.",
-    "f) Winners of the game will be decided on the basis of points."
+    "f) Winners of the game will be decided on the basis of points.",
   ];
 
   const formattedAboutText = aboutText.map((text, index) => (
@@ -81,7 +85,7 @@ const Thambola = () => {
         registrationLinks={registrationLink}
       />{" "}
       <div>
-        <h3 className="volunteer-heading">Tombola Volunters</h3>
+        <h3 className="volunteer-heading">Tombola Volunteers</h3>
         <Organizers organizersData={organizersData} />
       </div>
     </div>

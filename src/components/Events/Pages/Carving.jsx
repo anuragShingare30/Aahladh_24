@@ -1,13 +1,17 @@
-import React from "react";
+import React, { useEffect } from "react";
 import AboutEvent from "../AboutEvent";
 import Organizers from "../../Organizers/Organizers";
 import { AiFillInstagram } from "react-icons/ai";
-import BhanuRekhaImage from '../../../Assets/Volunteers/BHANUREKHA.jpg'
-import YuvarajuImage from '../../../Assets/Volunteers/RYuvaraju.jpg'
-import HarshaImage from '../../../Assets/Volunteers/HarshaVikhyath.jpeg'
-import HarshithImage from '../../../Assets/Volunteers/HARSHITKUMAR.jpg'
+import BhanuRekhaImage from "../../../Assets/Volunteers/BHANUREKHA.jpg";
+import YuvarajuImage from "../../../Assets/Volunteers/RYuvaraju.jpg";
+import HarshaImage from "../../../Assets/Volunteers/HarshaVikhyath.jpeg";
+import HarshithImage from "../../../Assets/Volunteers/HARSHITKUMAR.jpg";
 
 const Carving = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   const aboutText = [
     "1) Two members should be in a team to participate in the event. Only team leaders have to fill out the form (team members should not) ",
     "2) The contestants will have one hour to complete the piece for judging",
@@ -81,7 +85,7 @@ const Carving = () => {
         registrationLinks={registrationLink}
       />
       <div>
-        <h3 className="volunteer-heading">Vegetable Carving Volunters</h3>
+        <h3 className="volunteer-heading">Vegetable Carving Volunteers</h3>
         <Organizers organizersData={organizersData} />
       </div>
     </div>

@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Aahladh from "./components/Aahladh/Aahladh";
 import FunZone from "./components/FunZone/FunZone";
@@ -23,6 +23,10 @@ import BlindArt from "./components/Events/Pages/BlindArt";
 import RingToss from "./components/Events/Pages/RingToss";
 
 const Allroutes = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   return (
     <Router>
       <Routes>

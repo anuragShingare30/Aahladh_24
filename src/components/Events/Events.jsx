@@ -12,6 +12,7 @@ import DumbCharades from '../../Assets/events/dumbcharades.gif'
 import Tombola from '../../Assets/events/tombola.gif'
 import RTS from '../../Assets/events/RTS.gif'
 import Photography from '../../Assets/events/photography.gif'
+import BFA from '../../Assets/events/BLINDFOLDART.gif'
 
 const Events = () => {
   const eventData = [
@@ -73,7 +74,7 @@ const Events = () => {
       title: "BLINK FOLD ART",
       copy: "Click here to register for the event",
       registrationLink: "/BlindFoldArt",
-      backgroundImage: SingingImage,
+      backgroundImage: BFA,
     },
     {
       title: "RECREATE THE SCENE",

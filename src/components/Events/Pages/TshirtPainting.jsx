@@ -1,13 +1,17 @@
-import React from "react";
+import React, { useEffect } from "react";
 import AboutEvent from "../AboutEvent";
 import Organizers from "../../Organizers/Organizers";
 import { AiFillInstagram, AiFillLinkedin } from "react-icons/ai";
 import SaicharanImage from "../../../Assets/Volunteers/Saicharan.jpg";
-import AmulyaImage from '../../../Assets/Volunteers/MALOTHUAMULYA.jpg'
-import NidhiImage from "../../../Assets/Volunteers/VISHWAKARMANIDHI.jpg"
-import TanyaImage from '../../../Assets/Volunteers/TANYA.jpg'
+import AmulyaImage from "../../../Assets/Volunteers/MALOTHUAMULYA.jpg";
+import NidhiImage from "../../../Assets/Volunteers/VISHWAKARMANIDHI.jpg";
+import TanyaImage from "../../../Assets/Volunteers/TANYA.jpg";
 
 const TshirtPainting = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   const aboutText = [
     "1) Two members per team: <strong> one model (wearing the t-shirt) and one artist (painting). </strong>",
     "2) <strong>Teams must contain either two boys or two girls.</strong>",
@@ -87,7 +91,7 @@ const TshirtPainting = () => {
         registrationLinks={registrationLink}
       />
       <div>
-        <h3 className="volunteer-heading">T-shirt Painting Volunters</h3>
+        <h3 className="volunteer-heading">T-shirt Painting Volunteers</h3>
         <Organizers organizersData={organizersData} />
       </div>
     </div>

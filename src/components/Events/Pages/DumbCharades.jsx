@@ -1,12 +1,16 @@
-import React from "react";
+import React, { useEffect } from "react";
 import AboutEvent from "../AboutEvent";
 import Organizers from "../../Organizers/Organizers";
 import { AiFillInstagram } from "react-icons/ai";
-import HarshaImage from '../../../Assets/Volunteers/HARSHAMANAM.jpg'
+import HarshaImage from "../../../Assets/Volunteers/HARSHAMANAM.jpg";
 import KalpanaImage from "../../../Assets/Volunteers/KALPANAREDDY.jpg";
 import SriramImage from "../../../Assets/Volunteers/SRIRAM.png";
 
 const DumbCharades = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   const aboutText = [
     "<strong> Round >> 1 </strong>",
     "1) A group should consist of <strong> 4 members.</strong>.",
@@ -75,7 +79,7 @@ const DumbCharades = () => {
         registrationLinks={registrationLink}
       />{" "}
       <div>
-        <h3 className="volunteer-heading">Dumb Charades Volunters</h3>
+        <h3 className="volunteer-heading">Dumb Charades Volunteers</h3>
         <Organizers organizersData={organizersData} />
       </div>
     </div>

@@ -35,6 +35,7 @@ const Slider = () => {
     simulateLoading();
   }, []);
 
+
   const handleClickNext = () => {
     let items = slideRef.current.querySelectorAll(".item");
     slideRef.current.appendChild(items[0]);

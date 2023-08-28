@@ -1,9 +1,24 @@
 import React from "react";
 import "./AnimateCard.css";
-import { FaPhone, FaEnvelope, FaInstagram, FaLinkedin } from "react-icons/fa";
-import {Link} from "react-router-dom"
+import {
+  FaPhone,
+  FaEnvelope,
+  FaInstagram,
+  FaLinkedin,
+  FaFacebook,
+} from "react-icons/fa";
+import { Link } from "react-router-dom";
 
-const Animate = ({ name, job, image, phone, email, instagramUrl, linkedinUrl }) => {
+const Animate = ({
+  name,
+  job,
+  image,
+  phone,
+  email,
+  facebookUrl,
+  instagramUrl,
+  linkedinUrl,
+}) => {
   const cardStyle = {
     backgroundImage: `url(${image})`,
   };
@@ -21,11 +36,20 @@ const Animate = ({ name, job, image, phone, email, instagramUrl, linkedinUrl }) 
               <FaEnvelope />
             </div>
           </Link>
-          <Link to={instagramUrl} target="_blank" className="connection">
-            <div className="icon">
-              <FaInstagram />
-            </div>
-          </Link>
+          {facebookUrl && (
+            <Link to={facebookUrl} target="_blank" className="connection">
+              <div className="icon">
+                <FaFacebook />
+              </div>
+            </Link>
+          )}
+          {instagramUrl && (
+            <Link to={instagramUrl} target="_blank" className="connection">
+              <div className="icon">
+                <FaInstagram />
+              </div>
+            </Link>
+          )}
           <Link to={linkedinUrl} target="_blank" className="connection">
             <div className="icon">
               <FaLinkedin />

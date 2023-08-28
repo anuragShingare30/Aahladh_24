@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import AboutEvent from "../AboutEvent";
 import Organizers from "../../Organizers/Organizers";
 import { AiFillInstagram } from "react-icons/ai";
@@ -8,6 +8,10 @@ import RamyaImage from "../../../Assets/FUNZONE/RAMYAS.jpg";
 import AsrijImage from "../../../Assets/FUNZONE/SRIRAMOJUASRIJ.jpeg";
 
 const GlassBallon = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   const aboutText = [
     "1) <strong> Setup: </strong> Each player is provided with a set of paper glasses and a balloon.",
     "2) <strong> Time Limit: </strong> Players have 60 seconds to construct a tower using the paper glasses.",
@@ -71,10 +75,7 @@ const GlassBallon = () => {
     {
       title: "Asrij Sriramoju",
       copy: "Volunteer",
-      socialMediaIcons: [
-        {
-        },
-      ],
+      socialMediaIcons: [{}],
       email: "221156@iiitt.ac.in",
       phoneNumber: "9390368638",
       backgroundImage: AsrijImage,
@@ -88,7 +89,7 @@ const GlassBallon = () => {
         registrationLinks={registrationLink}
       />
       <div>
-        <h3 className="volunteer-heading">Glass and Ballon Volunters</h3>
+        <h3 className="volunteer-heading">Glass and Ballon Volunteers</h3>
         <Organizers organizersData={organizersData} />
       </div>
     </div>

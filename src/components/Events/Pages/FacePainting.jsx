@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import AboutEvent from "../AboutEvent";
 import Organizers from "../../Organizers/Organizers";
 import { AiFillInstagram } from "react-icons/ai";
@@ -8,13 +8,17 @@ import SanjanaImage from "../../../Assets/Volunteers/ALURISANJANARAO.jpg";
 import NehalImage from "../../../Assets/Volunteers/NEHALCHAURE.jpg";
 
 const FacePainting = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   const aboutText = [
     "1) Participants must gather in the hall <strong> 15 minutes </strong> before the event begins.",
     "2) Materials and equipment for the competition will be provided by organizers. Only those items must be used in the competition.",
     "3) Each participant must bring their painting partner.",
     "4) Competition has a time limit of <strong> 60 minutes </strong>.",
     "5) Participants will be assessed based on <strong> creativity, design and innovation</strong>.",
-    "6) Decision made by judges will be final."
+    "6) Decision made by judges will be final.",
   ];
 
   const formattedAboutText = aboutText.map((text, index) => (
@@ -73,7 +77,7 @@ const FacePainting = () => {
         registrationLinks={registrationLink}
       />{" "}
       <div>
-        <h3 className="volunteer-heading">Dance Volunters</h3>
+        <h3 className="volunteer-heading">Dance Volunteers</h3>
         <Organizers organizersData={organizersData} />
       </div>
     </div>

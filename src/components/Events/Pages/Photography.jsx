@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import AboutEvent from "../AboutEvent";
 import Organizers from "../../Organizers/Organizers";
 import { AiFillInstagram } from "react-icons/ai";
@@ -7,6 +7,10 @@ import AkramImage from "../../../Assets/Volunteers/ABDULAKRAM.jpeg";
 import RakeshImage from "../../../Assets/Volunteers/ARUMALLARAKESH.jpg";
 
 const Photography = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   const aboutText = [
     '1) Entries should be in form of <strong> PNG, JPEG, JPG </strong>extensions. <br /> &nbsp;&nbsp; <strong>E.g. " RamaKrishna_Mulugu.png " </strong>',
     "2) From each Theme only one picture should be uploaded to the drive link i.e, <strong> Silhouettes </strong> or <strong> Through the Looking Glass </strong> .",
@@ -16,7 +20,7 @@ const Photography = () => {
     "6) Entries should not contain any objectionable content.",
     "7) Place of the photo taken might be asked from you if there is any issue with the photo violating the above condition  consideration.",
     "8) Photos should be taken in between the date of aahaladh event.",
-    " <strong> Note: Failing to meet above requirements would result in disqualification of participant</strong>."
+    " <strong> Note: Failing to meet above requirements would result in disqualification of participant</strong>.",
   ];
 
   const formattedAboutText = aboutText.map((text, index) => (
@@ -75,7 +79,7 @@ const Photography = () => {
         registrationLinks={registrationLink}
       />{" "}
       <div>
-        <h3 className="volunteer-heading">Dance Volunters</h3>
+        <h3 className="volunteer-heading">Dance Volunteers</h3>
         <Organizers organizersData={organizersData} />
       </div>
     </div>

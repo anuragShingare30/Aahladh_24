@@ -1,4 +1,4 @@
-import React from "react";
+import React,{useEffect} from "react";
 import AboutEvent from "../AboutEvent";
 import Organizers from "../../Organizers/Organizers";
 import { AiFillInstagram } from "react-icons/ai";
@@ -8,6 +8,11 @@ import MohanaImage from "../../../Assets/FUNZONE/MOHANA.jpg";
 import ChandanaImage from "../../../Assets/FUNZONE/HARICHANDANA.png";
 
 const BlindArt = () => {
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   const aboutText = [
     "1) Each team consists of <strong> two players </strong>.",
     "2) <strong>One player describes the picture given by us </strong> and the <strong> second player draws according to the given instructions by his/ her partner </strong>.",
@@ -82,7 +87,7 @@ const BlindArt = () => {
         registrationLinks={registrationLink}
       />
       <div>
-        <h3 className="volunteer-heading">Unseen Artistry Volunters</h3>
+        <h3 className="volunteer-heading">Unseen Artistry Volunteers</h3>
         <Organizers organizersData={organizersData} />
       </div>
     </div>

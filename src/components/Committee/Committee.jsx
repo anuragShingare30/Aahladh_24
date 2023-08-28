@@ -26,6 +26,12 @@ import JayashreeImage from '../../Assets/Committee/JAYASHREE.jpg'
 import PhanindraImage from '../../Assets/Committee/PHANINDRA.jpg'
 import TagoreImage from '../../Assets/Committee/TAGORE.png'
 import ManishaImage from '../../Assets/Committee/MANISHADAS.jpg'
+import PradeepImage from '../../Assets/Committee/PRADEEP.jpg'
+import SnigdhaImage from '../../Assets/Committee/snigdha.jpg'
+import GnyanSaiImage from '../../Assets/Committee/GNYANSAI.jpeg'
+import RaahathImage from '../../Assets/Committee/SHAIKRAAHATH.jpeg'
+import PavaniImage from '../../Assets/Committee/pavani.jpg'
+import PriyaImage from '../../Assets/Committee/shanmukha.jpg'
 
 const Card = ({
   category,
@@ -407,7 +413,7 @@ const Committee = () => {
           link: "https://in.linkedin.com/in/kotakala-gopikasaranya-480364289",
         },
       ],
-      email: "221152@iiitt.ac.in",
+      email: "221114@iiitt.ac.in",
       phoneNumber: "9059021804",
     },
     {
@@ -461,6 +467,110 @@ const Committee = () => {
       ],
       email: "221218@iiitt.ac.in",
       phoneNumber: "9381437406",
+    },
+  ];
+  const designCommittee = [
+    {
+      category: "Design Committee",
+      title: "Vidiyala Pradeep",
+      backgroundImage: PradeepImage,
+      socialMediaIcons: [
+        {
+          icon: <AiFillInstagram size={20} />,
+          link: "https://www.instagram.com/mr.pradeepvidiyala/",
+        },
+      ],
+      email: "211136@iiitt.ac.in",
+      phoneNumber: "7075749912",
+    },
+    {
+      category: "Design Committee",
+      title: "K Sri Sai Snigdha",
+      backgroundImage: SnigdhaImage,
+      socialMediaIcons: [
+        {
+          
+        },
+      ],
+      email: "211114@iiitt.ac.in",
+      phoneNumber: "8555971940",
+    },
+    {
+      category: "Design Committee",
+      title: "Gnyan Sai Asapanna",
+      backgroundImage: GnyanSaiImage,
+      socialMediaIcons: [
+        {
+          icon: <AiFillInstagram size={20} />,
+          link: "https://www.instagram.com/iam_gnyansai/",
+        },
+      ],
+      email: "221209@iiitt.ac.in",
+      phoneNumber: "8919537210",
+    },
+    {
+      category: "Decoration Committee",
+      title: "Cherukuri V L N Kartheek",
+      backgroundImage: KartheekImage,
+      socialMediaIcons: [
+        {
+          icon: <AiFillInstagram size={20} />,
+          link: "https://instagram.com/kartheek.cherukuri/",
+        },
+      ],
+      email: "221212@iiitt.ac.in",
+      phoneNumber: "7893450614",
+    },
+    {
+      category: "Design Committee",
+      title: "Shaik Raahath",
+      backgroundImage: RaahathImage,
+      socialMediaIcons: [
+        {
+          icon: <AiFillInstagram size={20} />,
+          link: "https://www.instagram.com/raahath_shaik/",
+        },
+      ],
+      email: "221245@iiitt.ac.in",
+      phoneNumber: "9059243744",
+    },
+    {
+      category: "Design Committee",
+      title: "K.Gopika Saranya",
+      backgroundImage: SaranyaImage,
+      socialMediaIcons: [
+        {
+          icon: <FaLinkedinIn size={20} />,
+          link: "https://in.linkedin.com/in/kotakala-gopikasaranya-480364289",
+        },
+      ],
+      email: "221124@iiitt.ac.in",
+      phoneNumber: "9059021804",
+    },
+    {
+      category: "Design Committee",
+      title: "Kuruva Pavani",
+      backgroundImage: PavaniImage,
+      socialMediaIcons: [
+        {
+          icon: <AiFillInstagram size={20} />,
+          link: "https://www.instagram.com/pavani._21/",
+        },
+      ],
+      email: "221228@iiitt.ac.in",
+      phoneNumber: "9703927236",
+    },{
+      category: "Design Committee",
+      title: "D.Shanmukha Priya",
+      backgroundImage: PriyaImage,
+      socialMediaIcons: [
+        {
+          icon: <AiFillInstagram size={20} />,
+          link: "https://www.instagram.com/Chris_evans2313/",
+        },
+      ],
+      email: "221214@iiitt.ac.in",
+      phoneNumber: "9494741989",
     },
   ];
 
@@ -544,6 +654,24 @@ const Committee = () => {
         <div className="committee-css">
           <section className="committee-cards">
             {decorationCommittee.map((member, index) => (
+              <Card
+                key={index}
+                category={member.category}
+                title={member.title}
+                backgroundImage={member.backgroundImage}
+                socialMediaIcons={member.socialMediaIcons}
+                email={member.email}
+                phoneNumber={member.phoneNumber}
+              />
+            ))}
+          </section>
+        </div>
+      </div>
+      <div className="committe-types">
+        <h2 className="committe-heading">Design Committee</h2>
+        <div className="committee-css">
+          <section className="committee-cards">
+            {designCommittee.map((member, index) => (
               <Card
                 key={index}
                 category={member.category}

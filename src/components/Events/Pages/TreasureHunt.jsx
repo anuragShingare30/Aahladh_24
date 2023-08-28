@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import AboutEvent from "../AboutEvent";
 import Organizers from "../../Organizers/Organizers";
 import { AiFillInstagram, AiFillLinkedin } from "react-icons/ai";
@@ -7,10 +7,14 @@ import KarthikImage from "../../../Assets/Volunteers/GorantlaKarthik.jpg";
 import AswinImage from "../../../Assets/Volunteers/ASWINREDDY.jpg";
 import SrinidhiImage from "../../../Assets/Volunteers/SRINIDHI.jpeg";
 import TagoreImage from "../../../Assets/Volunteers/GUGULOTHTAGORE.jpg";
-import SourojitImage from '../../../Assets/Volunteers/SOUROJIT.jpg'
-import NandiniImage from '../../../Assets/Volunteers/NANDINISONEKAR.jpeg'
+import SourojitImage from "../../../Assets/Volunteers/SOUROJIT.jpg";
+import NandiniImage from "../../../Assets/Volunteers/NANDINISONEKAR.jpeg";
 
 const TreasureHunt = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   const aboutText = [
     "<strong> Team size : 4 members </strong>",
     "1) Treasure Hunt Event is basically multiple groups competing against each other to find the final <strong> treasure </strong> in a stipulated time frame across multiple locations on campus and it is a single round event, so give it your best. ",
@@ -56,10 +60,7 @@ const TreasureHunt = () => {
     {
       title: "M Aswin Reddy",
       copy: "Volunteer",
-      socialMediaIcons: [
-        {
-        },
-      ],
+      socialMediaIcons: [{}],
       email: "211121@iiitt.ac.in",
       phoneNumber: "8688524009",
       backgroundImage: AswinImage,
@@ -67,10 +68,7 @@ const TreasureHunt = () => {
     {
       title: "K Lakshmi Srinidhi",
       copy: "Volunteer",
-      socialMediaIcons: [
-        {
-        },
-      ],
+      socialMediaIcons: [{}],
       email: "211117@iiitt.ac.in",
       phoneNumber: "8341965169",
       backgroundImage: SrinidhiImage,
@@ -91,10 +89,7 @@ const TreasureHunt = () => {
     {
       title: "Sourojit Banerjee",
       copy: "Volunteer",
-      socialMediaIcons: [
-        {
-        },
-      ],
+      socialMediaIcons: [{}],
       email: "221249@iiitt.ac.in",
       phoneNumber: "9748222341",
       backgroundImage: SourojitImage,
@@ -102,10 +97,7 @@ const TreasureHunt = () => {
     {
       title: "Nandini Sonekar",
       copy: "Volunteer",
-      socialMediaIcons: [
-        {
-        },
-      ],
+      socialMediaIcons: [{}],
       email: "221138@iiitt.ac.in",
       phoneNumber: "8080865008",
       backgroundImage: NandiniImage,
@@ -119,7 +111,7 @@ const TreasureHunt = () => {
         registrationLinks={registrationLink}
       />{" "}
       <div>
-        <h3 className="volunteer-heading">Treasure Hunt Volunters</h3>
+        <h3 className="volunteer-heading">Treasure Hunt Volunteers</h3>
         <Organizers organizersData={organizersData} />
       </div>
     </div>

@@ -1,12 +1,16 @@
-import React from "react";
+import React, { useEffect } from "react";
 import AboutEvent from "../AboutEvent";
 import Organizers from "../../Organizers/Organizers";
-import { AiFillInstagram , AiFillLinkedin } from "react-icons/ai";
-import GnyanSaiImage from '../../../Assets/Volunteers/ASAPANNAGNYANSAI.jpeg'
-import SaiSnigdhaImage from "../../../Assets/Volunteers/SRISAISNIGDHA.jpg"
-import TejaswiImage from '../../../Assets/Volunteers/TejaswiRayidi.jpg'
+import { AiFillInstagram, AiFillLinkedin } from "react-icons/ai";
+import GnyanSaiImage from "../../../Assets/Volunteers/ASAPANNAGNYANSAI.jpeg";
+import SaiSnigdhaImage from "../../../Assets/Volunteers/SRISAISNIGDHA.jpg";
+import TejaswiImage from "../../../Assets/Volunteers/TejaswiRayidi.jpg";
 
 const Dance = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   const aboutText = [
     "<strong> Round >> 1 </strong>",
     "1) Dance can be <strong> solo or duo or group </strong> and of any style.",
@@ -14,7 +18,6 @@ const Dance = () => {
     "3) Performances can feature <strong> mixed groups </strong>, i.e., both male and female participants can be part of a single performance.",
     "4) Duration of dance must be below <strong> 5 minutes </strong>.",
     "5) Number of participants in a group should not exceed <strong> 5 </strong>.",
-    
   ];
 
   const formattedAboutText = aboutText.map((text, index) => (
@@ -72,7 +75,7 @@ const Dance = () => {
         registrationLinks={registrationLink}
       />{" "}
       <div>
-        <h3 className="volunteer-heading">Dance Volunters</h3>
+        <h3 className="volunteer-heading">Dance Volunteers</h3>
         <Organizers organizersData={organizersData} />
       </div>
     </div>

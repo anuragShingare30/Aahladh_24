@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import AboutEvent from "../AboutEvent";
 import Organizers from "../../Organizers/Organizers";
 import { AiFillInstagram } from "react-icons/ai";
@@ -8,17 +8,21 @@ import LehyaImage from "../../../Assets/Volunteers/SODELEHYA.jpg";
 import KarthikImage from "../../../Assets/Volunteers/KathikNivedhan.jpg";
 
 const GuessTheObject = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   const aboutText = [
     "<strong> Round >> 1 </strong>",
     "1) Each team should comprise of <strong> 3-4 members </strong>.",
     "2) The game will comprise of total 3 rounds. 50 Teams will be divided into 4 batches the top 5 teams of each batch i.e 20 teams will qualify for the next round. Finale will be conducted for the top 5 Teams of Round 2.",
     "3) The object should be guessed within the alloted time limit with only touch and the guess should be written in a piece of paper ( seperate time will not be given for writing.",
     "4) <strong> ROUND - 1 </strong> : 5 Objects should be guessed by each team in 10 seconds of time for each object.",
-      " &nbsp; &nbsp; <strong> +5 points </strong> for correct answer <strong> -1 point </strong> for every wrong guess.",
-      "<strong> ROUND - 2 </strong> : 5 Objects should be guessed by each team in 15 seconds per object.",
-      " &nbsp; &nbsp; <strong> +5 points </strong> for correct answer <strong> -1 point </strong> for every wrong guess.",
-      "<strong> ROUND - 3 : ( FINAL ROUND ) </strong>: 3 objects should be guessed by each team in 20 seconds per object.",
-      "&nbsp; &nbsp; <strong> +15 points </strong> for correct answer <strong> -5 point </strong> for every wrong guess.",
+    " &nbsp; &nbsp; <strong> +5 points </strong> for correct answer <strong> -1 point </strong> for every wrong guess.",
+    "<strong> ROUND - 2 </strong> : 5 Objects should be guessed by each team in 15 seconds per object.",
+    " &nbsp; &nbsp; <strong> +5 points </strong> for correct answer <strong> -1 point </strong> for every wrong guess.",
+    "<strong> ROUND - 3 : ( FINAL ROUND ) </strong>: 3 objects should be guessed by each team in 20 seconds per object.",
+    "&nbsp; &nbsp; <strong> +15 points </strong> for correct answer <strong> -5 point </strong> for every wrong guess.",
     "5) TIE BREAKER critera :total points of all <strong> 3 rounds </strong> will be taken into consideration.",
   ];
 
@@ -91,7 +95,7 @@ const GuessTheObject = () => {
         registrationLinks={registrationLink}
       />
       <div>
-        <h3 className="volunteer-heading">Guess The Object Volunters</h3>
+        <h3 className="volunteer-heading">Guess The Object Volunteers</h3>
         <Organizers organizersData={organizersData} />
       </div>
     </div>

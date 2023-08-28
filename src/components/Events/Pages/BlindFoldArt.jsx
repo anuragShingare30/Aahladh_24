@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import AboutEvent from "../AboutEvent";
 import Organizers from "../../Organizers/Organizers";
 import { AiFillInstagram, AiFillLinkedin } from "react-icons/ai";
@@ -8,13 +8,17 @@ import BhupeshImage from "../../../Assets/Volunteers/BHUPESHGUPTA.jpg";
 import PrakartiImage from "../../../Assets/Volunteers/PRAKARTI.jpg";
 
 const BlindFoldArt = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   const aboutText = [
     "1) Participants will receive the <strong> supplies and designated workspaces </strong>.",
     "2) Participants will be <strong> blindfolded </strong> and will be provided with a theme.",
     "3) After <strong>10 minutes, everyone can remove their blindfolds and view their art piece </strong>.",
     "4) At the <strong> 25-minute mark, a challenge is presented. The winner can remove their blindfold for 2 minutes </strong>.",
     "5) 15 minutes after challenge 1, another challenge occurs with the same advantage for the winner.",
-    "6) The event ends in 1 hour, <strong>celebrating creativity and unique artworks </strong>."
+    "6) The event ends in 1 hour, <strong>celebrating creativity and unique artworks </strong>.",
   ];
 
   const formattedAboutText = aboutText.map((text, index) => (
@@ -87,7 +91,7 @@ const BlindFoldArt = () => {
         registrationLinks={registrationLink}
       />{" "}
       <div>
-        <h3 className="volunteer-heading">Blind Fold Art Volunters</h3>
+        <h3 className="volunteer-heading">Blind Fold Art Volunteers</h3>
         <Organizers organizersData={organizersData} />
       </div>
     </div>
