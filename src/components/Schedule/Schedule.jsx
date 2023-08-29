@@ -86,7 +86,7 @@ const timelineData = [
       },
       {
         time: "03/09/2023 4:45PM - 5:45PM",
-        title: "Carving",
+        title: "Carving (INTRA)",
         description: "Click here to register for the event.",
         registrationLink: "https://forms.gle/YqRY7MQSeCqYxtRp8",
       },
