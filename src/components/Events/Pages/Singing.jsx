@@ -13,12 +13,13 @@ const Singing = () => {
 
   const aboutText = [
     "<strong> Round >> 1 </strong>",
-    "1) You can sing as a <strong> group or duo or solo </strong>.",
-    "2) You should mix up atleast <strong> 2 songs </strong>.",
-    "3) <strong> Time Limit </strong> : Around 2.5 - 3 minutes.",
-    "4) <strong> Bilingual performances </strong> will have more priority.",
-    "5) Engagingness and sync will be criteria for evaluation.",
-    "6) Information on next round(s) will be provided once Round 1 is over.",
+    "1) <strong> You need to sing without seeing lyrics. </strong>",
+    "2) You can sing as a <strong> group or duo or solo </strong>.",
+    "3) You should mix up atleast <strong> 2 songs </strong>.",
+    "4) <strong> Time Limit </strong> : Around 2.5 - 3 minutes.",
+    "5) <strong> Bilingual performances </strong> will have more priority.",
+    "6) Engagingness and sync will be criteria for evaluation.",
+    "7) Information on next round(s) will be provided once Round 1 is over.",
   ];
 
   const formattedAboutText = aboutText.map((text, index) => (

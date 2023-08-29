@@ -252,3 +252,9 @@ h6 {
   font-weight: normal;
   font-style: normal;
 }
+
+.btn-heading{
+  color:#ffffff!important ;
+  font-size: 18px;
+  font-weight: 600;
+}

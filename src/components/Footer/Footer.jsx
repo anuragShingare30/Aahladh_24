@@ -4,16 +4,18 @@ import { FaHeart } from "react-icons/fa";
 import "bootstrap/dist/css/bootstrap.css";
 import "./Footer.css";
 import SocialIcons from "../SocialIcons/SocialIcons";
-import {
-  AiFillInstagram,
-} from "react-icons/ai";
+import { AiFillInstagram } from "react-icons/ai";
 import { FaEnvelope } from "react-icons/fa";
-import AahladhLogo from '../../Assets/Aahladhlogo.png'
+import AahladhLogo from "../../Assets/Aahladhlogo.png";
+import FooterBtn from "./FooterBtn";
 
 const Footer = () => {
   const socialIconsData = [
     { icon: <FaEnvelope />, url: "mailto:aahladh@iiitt.ac.in" },
-    { icon: <AiFillInstagram />, url: "https://www.instagram.com/aahladh__iiitt/" },
+    {
+      icon: <AiFillInstagram />,
+      url: "https://www.instagram.com/aahladh__iiitt/",
+    },
   ];
   return (
     <footer className="new_footer_area bg_color">
@@ -25,7 +27,11 @@ const Footer = () => {
                 className="f_widget company_widget wow fadeInLeft"
                 data-wow-delay="0.2s"
               >
-                <img src={AahladhLogo} alt="Aahladh-Logo" className="Aahladh-logo" />
+                <img
+                  src={AahladhLogo}
+                  alt="Aahladh-Logo"
+                  className="Aahladh-logo"
+                />
                 <h3 className="aahladh-title">Aahladh'23</h3>
                 <p className="aahladh-desc">Riseup to Rejoice</p>
               </div>
@@ -58,18 +64,23 @@ const Footer = () => {
               </div>
             </div>
             <div className="col-lg-3 col-md-6">
-              <div
-                className="f_widget social-widget pl_70 wow fadeInLeft"
-                data-wow-delay="0.8s"
-              >
-                <h3 className="f-title f_600 t_color f_size_18">Contact Us</h3>
-                {/* <div className="f_social_icon">
-                                    <a href="/" className="footer-social-icons "><AiFillGithub /> </a>
-                                    <a href="/" className="footer-social-icons"><AiFillInstagram /></a>
-                                    <a href="/" className="footer-social-icons"><AiOutlineTwitter /> </a>
-                                    <a href="/" className="footer-social-icons"><FaLinkedinIn /> </a>.
-                                </div> */}
-                <SocialIcons socialIcons={socialIconsData} />
+              <div className="col-12">
+                <div
+                  className="f_widget social-widget pl_70 wow fadeInLeft"
+                  data-wow-delay="0.8s"
+                >
+                  <h3 className="f-title f_600 t_color f_size_18">
+                    Contact Us
+                  </h3>
+                  <SocialIcons socialIcons={socialIconsData} />
+                </div>
+              </div>
+              <div className="col-12">
+                <div className="f_widget social-widget pl_70 wow fadeInLeft"
+                  data-wow-delay="0.8s">
+                    <p className="btn-heading">Brochure</p>
+                      <FooterBtn />
+                </div>
               </div>
             </div>
             <div className="col-lg-4 col-md-6">
@@ -82,7 +93,7 @@ const Footer = () => {
                   src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15683.344607610845!2d78.58343482017517!3d10.669822971745132!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3baa8d475370d8ff%3A0x28b98720c32abaa8!2sIndian%20Institute%20of%20Information%20Technology%20Tiruchirappalli!5e0!3m2!1sen!2sin!4v1692780588563!5m2!1sen!2sin"
                   width="300"
                   height="200"
-                  style={{ border: 0, borderRadius:10, }}
+                  style={{ border: 0, borderRadius: 10 }}
                   allowFullScreen=""
                   loading="lazy"
                   referrerPolicy="no-referrer-when-downgrade"

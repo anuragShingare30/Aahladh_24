@@ -65,16 +65,16 @@ const timelineData = [
     eraTitle: "DAY 3 (Sept 3rd)",
     entries: [
       {
-        time: "03/09/2023 8:30AM - 10:45AM",
-        title: "Treasure Hunt (INTRA)",
-        description: "Click here to register for the event.",
-        registrationLink: "https://forms.gle/WGzWL2EnLCQXqpKUA",
-      },
-      {
-        time: "03/09/2023 11:00PM - 12:30PM",
+        time: "03/09/2023 8:30PM - 10:00PM",
         title: "T-Shirt Painting",
         description: "Click here to register for the event.",
         registrationLink: "https://forms.gle/LQ2X8SzmMTmtXHVK8",
+      },
+      {
+        time: "03/09/2023 10:15AM - 12:30PM",
+        title: "Treasure Hunt (INTRA)",
+        description: "Click here to register for the event.",
+        registrationLink: "https://forms.gle/WGzWL2EnLCQXqpKUA",
       },
       {
         time: "03/09/2023 01:45PM - 2:45PM",
