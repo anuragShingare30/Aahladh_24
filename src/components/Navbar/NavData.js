@@ -23,6 +23,10 @@ export const NavData = [
         title:"Schedule",
         url:"/Schedule",
         cName:"nav-links",
+    },{
+        title:"Rules",
+        url:"/Rules",
+        cName:"nav-links",
     }
 
 ]

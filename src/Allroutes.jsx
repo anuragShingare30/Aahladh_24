@@ -21,6 +21,7 @@ import GlassBallon from "./components/Events/Pages/GlassBallon";
 import WaterTub from "./components/Events/Pages/WaterTub";
 import BlindArt from "./components/Events/Pages/BlindArt";
 import RingToss from "./components/Events/Pages/RingToss";
+import Rules from "./components/Rules/Rules";
 
 const Allroutes = () => {
   useEffect(() => {
@@ -35,6 +36,7 @@ const Allroutes = () => {
         <Route path="/events" element={<Events />} />
         <Route path="/Committee" element={<Committee />} />
         <Route path="/Schedule" element={<Schedule />} />
+        <Route path="/Rules" element={<Rules />} />
         <Route path="/Singing" element={<Singing />} />
         <Route path="/Dance" element={<Dance />} />
         <Route path="/Carving" element={<Carving />} />
