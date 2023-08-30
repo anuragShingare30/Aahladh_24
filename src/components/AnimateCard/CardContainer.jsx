@@ -26,7 +26,7 @@ const cardData = [
     linkedinUrl: "https://www.linkedin.com/in/varun-chandra-809b97282",
   },
   {
-    name: "Mahitha",
+    name: "Kancharla N V L Durga Mahitha",
     job: "Vice Cultural Secretary",
     image: profile2,
     phone: "9705697956",
