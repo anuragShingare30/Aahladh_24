@@ -7,6 +7,10 @@ const timelineData = [
     eraTitle: "DAY 1 (Sept 1st)",
     entries: [
       {
+        time: "01/09/2023 10:00AM - 11:30AM",
+        title: "Inauguration",
+      },
+      {
         time: "01/09/2023 11:00AM - 12:30PM",
         title: "Face Painting",
         description: "Click here to register for the event.",

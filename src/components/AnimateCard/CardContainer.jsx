@@ -32,7 +32,7 @@ const cardData = [
     phone: "9705697956",
     email: "211113@iiitt.ac.in",
     instagramUrl: "https://www.instagram.com/_mahitha__k/",
-    linkedinUrl: "www.linkedin.com/in/mahitha-kancharla-a78637255",
+    linkedinUrl: "https://www.linkedin.com/in/mahitha-kancharla-a78637255",
   },
 ];
 
