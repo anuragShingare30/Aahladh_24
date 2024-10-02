@@ -1,6 +1,6 @@
 export const NavData = [
     {
-        title:"HOME",
+        title:"kjdsbvjbjdbjvbb",
         url:"/",
         cName:"nav-links",
     },
